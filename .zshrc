@@ -234,6 +234,11 @@ export PATH=$HOME/Code/Genomics/AdmixTools/bin:$PATH
 ####################
 # Private Filesystem
 #
+# # NOTE: If you have some private files that you access occassionally but would
+# otherwise like to protect from say rogue LLM agents or poisoned dependencies
+# or whatever, just in case, you can set up a private encrypted directory and
+# leave it unmounted except when you need it.
+#
 # sudo apt install gocryptfs
 # mkdir ~/.private-encrypted ~/private
 # gocryptfs -init ~/.private-encrypted    # set password
