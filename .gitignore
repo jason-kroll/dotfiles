@@ -1,0 +1,28 @@
+# Never commit secrets or credentials
+.ssh/
+.gnupg/
+.aws/
+.azure/
+.kube/
+.netrc
+.env
+.env.*
+*.pem
+*.key
+*credential*
+*secret*
+*token*
+
+# Private history and local editor state
+.*_history
+*.swp
+*~
+.DS_Store
+
+# Tool caches and local-only directories
+.cache/
+.local/
+.cargo/
+.bun/
+.npm/
+.dotfiles/
