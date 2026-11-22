@@ -8,6 +8,7 @@ What's in here:
 
 * [README.md](README.md) -> this file!
 * [attic](attic/) -> old configs of sentimental value or historical interest
+* [.config](.config/) -> things meant for $XDG_CONFIG_HOME which is typically ~/.config
 * everything else -> active configs of one variety or another
 
 ## Installation Notes
@@ -15,7 +16,7 @@ What's in here:
 Honestly why would you install someone else's dotfiles? But maybe as references
 there is something useful in them.
 
-*.zshenv should never be committed! especially now when it's full of API keys...*
+* **.zshenv should never be committed! especially now when it's full of API keys...**
 
 Most of the other things can be symlinked `ln -s "$PWD"/.zshrc ~/.zshrc` or
 just copied to $HOME and copied back to the dotfiles repo when it's time to
