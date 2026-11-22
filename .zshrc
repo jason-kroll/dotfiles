@@ -265,6 +265,7 @@ alias punmount="fusermount -u ~/private"
 
 extra-on() {
   # open via filesystem label, not the disk UUID (set once: sudo cryptsetup config --label=extra <disk>)
+  # find out with lsblk when you're setting this up the first time
   [ -e /dev/mapper/extra ] || sudo cryptsetup open /dev/disk/by-label/extra extra || return
   mountpoint -q /mnt/extra || sudo mount /mnt/extra
 }
@@ -274,7 +275,7 @@ extra-off() {
   if [ -e /dev/mapper/extra ]; then sudo cryptsetup close extra; fi
 }
 
-alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 export SUDO_EDITOR=nvim
 
