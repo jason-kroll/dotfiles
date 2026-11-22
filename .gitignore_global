@@ -28,6 +28,9 @@
 # Shell env files with API keys
 .zshenv
 
+# Planning and misc thinking files
+notes.md
+
 # Environment files (keep examples committable)
 .env
 .env.*
