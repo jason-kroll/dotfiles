@@ -1,0 +1,49 @@
+# ~/.gitignore_global -- used as core.excludesfile, so it applies to every
+# repo on the machine. Patterns anchor at each repo's root; for the dotfiles
+# bare repo (work-tree=$HOME) the root is $HOME, so these also guard the
+# home-directory files below.
+# Note: gitignore does not support inline comments, so keep # on its own line.
+
+# AI coding tools: configs, histories and logs can contain API keys,
+# prompts and file contents. Never commit these.
+# aider: ~/.aider.conf.yml, ~/.aider/, repo-local .aider.chat.history.md etc.
+.aider*
+# Mistral Vibe: config, logs, session data
+.vibe/
+.vibe*
+# Claude Code: settings, credentials, settings.local.json, global config
+.claude/
+.claude.json
+# MCP server configs often embed API keys
+.mcp.json
+
+# Cloud and package-manager credentials
+.netrc
+.npmrc
+.pypirc
+.docker/config.json
+# gh CLI OAuth token lives in hosts.yml
+.config/gh/
+
+# Shell env files with API keys
+.zshenv
+
+# Environment files (keep examples committable)
+.env
+.env.*
+!.env.example
+
+# Common build artifacts and editor noise
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+node_modules/
+target/
+build/
+dist/
+.DS_Store
+*.swp
+*~
