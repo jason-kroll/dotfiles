@@ -44,7 +44,8 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(csv
+   '(html
+     csv
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
@@ -145,12 +146,12 @@ This function should only modify configuration layer settings."
 
    dotspacemacs-additional-packages '(
                                       agent-shell
+
                                       ;; auto-dark
                                       ;; vibe-acp
                                       ;; xenops
 
                                       ;; catppuccin-theme
-                                      ;; doom-themes
                                       ;; ef-themes
                                       ;; kanagawa-themes
                                       ;; modus-themes
@@ -305,12 +306,10 @@ It should only modify the values of Spacemacs settings."
    ;; DOCUMENTATION.org for the full theme specifications.
    dotspacemacs-themes '(
                          (doom-nord-aurora :package doom-themes)
-                         doom-nord-light
+                         modus-operandi-tinted
                          doom-nord
                          doom-palenight
                          zenburn
-                         modus-operandi-tinted
-                         modus-vivendi-tinted
                          spacemacs-light
                          spacemacs-dark
                          )
@@ -989,6 +988,7 @@ ancestor of the current buffer."
 
   ;; LLMs
   ;;;;;;;
+
   )
 
 

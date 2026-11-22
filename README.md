@@ -32,7 +32,16 @@ dotfiles config --local status.showUntrackedFiles no
 dotfiles checkout -f
 ```
 
+And then you can `dotfiles status` and `dotfiles pull` etc etc
+
 *(but don't ever `dotfiles add -A` all right?)*
+
+```sh
+dotfiles status
+dotfiles add file1 file2 etc
+dotfiles commit -m "Imperative commit message"
+dotfiles push
+```
 
 ## Tooling
 
